@@ -3,7 +3,7 @@ body {
     font-size: 15px;
     margin: 0;
     padding: 0;
-    background-image:url('../img/t7.jpeg');
+    background-image:url('img/t7.jpeg');
     backdrop-filter: blur(1.5px);
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -204,19 +204,19 @@ header {
   
   /* Specific Images for Each Category */
   .trek {
-    background-image: url('../img/Triund-Trek-003.jpg');
+    background-image: url('img/Triund-Trek-003.jpg');
   }
   
   .beach {
-    background-image: url('../img/beach.jpg');
+    background-image: url('img/beach.jpg');
   }
   
   .mountain {
-    background-image: url('../img/mountain.jpeg');
+    background-image: url('img/mountain.jpeg');
   }
   
   .adventure {
-    background-image: url('../img/adventure.jpg');
+    background-image: url('img/adventure.jpg');
   }
   
 .search-section {
