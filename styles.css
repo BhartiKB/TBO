@@ -1,23 +1,120 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
+    font-size: 15px;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image:url('../img/t7.jpeg');
+    backdrop-filter: blur(1.5px);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: #e0e0e0;
     color: #333;
 }
 
 header {
-    background-color: #0044cc;
+
+    background-color: #1a1a1b;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
+/* Hero Section
+.hero {
+    background-image: url('https://via.placeholder.com/1500x600?text=Explore+the+World');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  } */
+
+  
+  .hero-about {
+    /* display: flex; Flexbox for horizontal layout */
+    /* justify-content: space-between; Distribute content */
+    /* align-items: center; Center content vertically */
+    /* background-color: #ddd; */
+    /* background-image: url('../img/beach.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* height: 400px; */
+    /* padding: 20px; */
+    /* color: white; */
+    
+    text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    color: black;
+    text-align: left;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-height: 400px;
+    font-family:  monospace;
+  }
+  
+  .hero-content, .about-content {
+    max-width: 45%; /* Limit the width of each content block */
+  }
+  
+  .hero-content h1 {
+
+    font-size: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 25px;
+  }
+  
+  .about-content .tagline {
+    text-align: left;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  .about-content .tagline:nth-child(2) {
+    text-align: left;
+    font-size: 30px; /* Slightly smaller font for the second tagline */
+  }
+  
+  .about-content .description {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+  }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-size: 22px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+  }
+/* Hover effect on the links */
+.navbar a:hover {
+    color: #3faffa; /* Change text color on hover */
+    transform: scale(1.2); /* Zoom the text by 20% on hover */
+  }
 
 .nav-links {
     list-style: none;
@@ -37,21 +134,23 @@ header {
 }
 
 .nav-links a:hover {
+    text-shadow: #222;
+    text-emphasis: none;
     text-decoration: underline;
 }
 
-.trending-section {
+.categories {
     text-align: center;
-    margin: 20px 0;
+    margin: 45px 0;
 }
 
-.trending-images {
+.categories-images {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.hover-image {
+/* .hover-image {
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -61,11 +160,71 @@ header {
 
 .hover-image:hover {
     transform: scale(1.1);
-}
+} */
 
+
+/* Categories Section */
+.categories {
+    font-size: 30px;
+    padding: 40px 10px;
+    /* background-image:url('../img/travel.jpg'); */
+    background-color: #ffffff93;
+  }
+  
+  .container {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+ /* Category Boxes */
+.box {
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Specific Images for Each Category */
+  .trek {
+    background-image: url('../img/Triund-Trek-003.jpg');
+  }
+  
+  .beach {
+    background-image: url('../img/beach.jpg');
+  }
+  
+  .mountain {
+    background-image: url('../img/mountain.jpeg');
+  }
+  
+  .adventure {
+    background-image: url('../img/adventure.jpg');
+  }
+  
 .search-section {
+    font-size: 30px;
+    background-color: #ffffff93;
+    padding: 40px 30px;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 40px;
 }
 
 .search-form {
@@ -83,6 +242,7 @@ header {
 }
 
 .search-button, .voice-search, .image-search {
+    font-size: 30px;
     padding: 10px 15px;
     background-color: #0044cc;
     color: white;
