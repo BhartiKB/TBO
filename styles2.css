@@ -1,0 +1,402 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+
+    background-color: #1a1a1b;
+    color: white;
+    padding: 20px 20px;
+    font-family: monospace;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-size: 22px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+  }
+/* Hover effect on the links */
+.navbar a:hover {
+    color: #3faffa; /* Change text color on hover */
+    transform: scale(1.2); /* Zoom the text by 20% on hover */
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-shadow: #222;
+    text-emphasis: none;
+    text-decoration: underline;
+}
+
+
+.trending-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.trending-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hover-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+.search-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button, .voice-search, .image-search {
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover, .voice-search:hover, .image-search:hover {
+    background-color: #003399;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* General Section Styling */
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section h1 {
+    font-size: 7rem;
+    margin-bottom: 10px;
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 2rem;
+    /* max-width: 600px; */
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* About Platform */
+.about-platform {
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-platform h2, .about-platform h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0044cc;
+    text-align: center;
+}
+
+.about-platform ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Mission and Vision */
+.mission-vision {
+    background: linear-gradient(to right,  #cae8f3, #e8f4f8);
+    color: #333;
+    text-align: center;
+}
+
+.mission-vision h2 {
+    color: #d62828;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mission-vision p {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: #004d61;
+}
+
+/* Technology and Innovation */
+.technology-innovation {
+    background: #e8f4f8;
+    color: #004d61;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #fafaf8;
+    color: #333;
+    text-align: center;
+}
+
+.testimonial-banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    text-align: center;
+    background: linear-gradient(to right, #06d630, #1b7daa);
+    color: white;
+    padding: 40px 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff9900;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #cc7a00;
+}
+
+
+
+/* contact us page */
+/* Offices Section */
+.offices-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.office-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.office-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.office-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Contact Form Section */
+/* Section Container for 'Send Us a Message' */
+.section-container {
+    background-color: #ece6dc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: #ffffffbc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+    /* Hero Section */
+        .hero-section {
+            background-image: url('contact-hero.jpg'); /* Replace with your desired image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Contact Details Section */
+        .contact-details {
+            background-color: #eef2f3;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .office {
+            margin-bottom: 20px;
+        }
+        .office h3 {
+            color: #333;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            background-color: #ece6dc;;
+            padding: 40px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(77, 77, 77, 0.911);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icon {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

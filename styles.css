@@ -236,15 +236,16 @@ header {
 
 .search-input {
     padding: 10px;
-    width: 300px;
+    width: 550px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 30px;
 }
 
 .search-button, .voice-search, .image-search {
     font-size: 30px;
     padding: 10px 15px;
-    background-color: #0044cc;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
