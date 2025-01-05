@@ -7,36 +7,87 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            background: url('image/bg6.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 20px;
+            display: flex;
+            align-items: center;
+            font-family: monospace;
+        }
+
+        header .logo {
+            flex: 1;
+        }
+
+        nav {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* White text color */
+            font-size: 22px; /* Increase font size */
+            font-weight: bold; /* Make text bold */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            text-shadow: #222;
+            text-emphasis: none;
+        }
+
         .container {
             width: 100%;
             max-width: 400px;
-            background: white;
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            color: #000; 
+            margin: 100px auto;
         }
+
         h2 {
             text-align: center;
             margin-bottom: 20px;
         }
+
         form {
             display: flex;
             flex-direction: column;
         }
+
         input {
             margin-bottom: 15px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         button {
             padding: 10px;
             background-color: #5cb85c;
@@ -45,26 +96,55 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #4cae4c;
         }
+
         .link {
             text-align: center;
             margin-top: 10px;
         }
+
         .link a {
             color: #007bff;
             text-decoration: none;
         }
+
         .link a:hover {
             text-decoration: underline;
         }
+
         .hidden {
             display: none;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo">TBO.com</div> -->
+            <div class="logo"><img src="img/logo_newyear25.gif" alt="logo" srcset="" width="80" height="40" ></div>
+            <ul class="nav-links">
+                <li><a style="font-size:1.5vw" href="index.html">Home</a></li>
+                <li><a style="font-size:1.5vw" href="about.html">About</a></li>
+                <li><a style="font-size:1.5vw" href="services.html">Services</a></li>
+                <li><a style="font-size:1.5vw" href="contact.html">Contact</a></li>
+                <li><a style="font-size:1.5vw" href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <div id="login-form">
             <h2>Login</h2>
@@ -90,6 +170,34 @@
                 <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
                 <button type="submit">Sign Up</button>
             </form>
+            <div style="
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 10vh; 
+                margin: 0;">
+                <button onclick="continueWithGoogle()" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    background-color: white;
+                    color: #000000;
+                    border: 1px solid #dadce0;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    box-shadow: none;
+                ">
+                    <img src="image/googlelogo.jpeg" alt="Google Logo" style="
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    ">
+                    Continue with Google
+                </button>
+            </div>
             <div class="link">
                 <a href="#" onclick="toggleForm('login')">Already have an account? Login</a>
             </div>
@@ -107,12 +215,16 @@
         </div>
     </div>
 
+    <footer>
+        <p>&copy; 2025 TBO.com. All Rights Reserved.</p>
+    </footer>
+
     <script>
         function toggleForm(form) {
             document.getElementById('login-form').classList.add('hidden');
             document.getElementById('signup-form').classList.add('hidden');
             document.getElementById('forgot-password-form').classList.add('hidden');
-            
+
             if (form === 'login') {
                 document.getElementById('login-form').classList.remove('hidden');
             } else if (form === 'signup') {
@@ -148,6 +260,10 @@
             event.preventDefault();
             const identifier = document.getElementById('forgot-identifier').value;
             alert(`OTP sent to ${identifier}`);
+        }
+
+        function continueWithGoogle() {
+            alert('Google Sign-In functionality coming soon!');
         }
     </script>
 </body>
